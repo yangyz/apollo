@@ -4,7 +4,7 @@ import org.springframework.boot.actuate.system.ApplicationPidFileWriter;
 import org.springframework.boot.actuate.system.EmbeddedServerPortFileWriter;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -22,8 +22,8 @@ import com.ctrip.framework.apollo.metaservice.ApolloMetaServiceConfig;
  * @author Jason Song(song_s@ctrip.com)
  */
 
-//@EnableEurekaServer
-@EnableEurekaClient
+@EnableEurekaServer
+//@EnableEurekaClient
 @EnableAspectJAutoProxy
 @EnableAutoConfiguration // (exclude = EurekaClientConfigBean.class)
 @Configuration

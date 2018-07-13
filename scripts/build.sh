@@ -12,6 +12,7 @@ apollo_portal_db_password=
 
 # meta server url, different environments should have different meta server addresses
 dev_meta=http://localhost:8080
+test_meta=http://localhost:8081
 fat_meta=http://someIp:8080
 uat_meta=http://anotherIp:8080
 pro_meta=http://yetAnotherIp:8080
